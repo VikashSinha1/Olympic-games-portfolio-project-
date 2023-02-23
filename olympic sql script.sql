@@ -1,4 +1,15 @@
-/****** Script for SelectTopNRows command from SSMS  ******/
+OLYMPIC GAMES DATA:-
+
+#--------BUSINESS REQUEST-------#
+*Visualize data that will help readers understand how countries have performed historically in summer olympic games.
+*Details of the competitors only if something intresting.
+*MAIN TASK:= Show historical performance for different coluntries with possiblity to select different countries. 
+
+
+
+
+
+
 ----TRANSFORMATIONS:-
 1. Change name into Competitors name
 2. Used case statement on "sex" column to further categorize the data into male and female
@@ -10,6 +21,8 @@
 
 
 **SQL SCRIPT USED IN THE SQL SERVER MANAGEMENT STUDIO FOR EXTRACTION OF RELEVENT DATA**
+/****** Script command from SSMS  ******/
+
 
 SELECT  [ID]
       ,[Name] as "Competitors_Name"
