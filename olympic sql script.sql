@@ -1,4 +1,16 @@
 /****** Script for SelectTopNRows command from SSMS  ******/
+----TRANSFORMATIONS:-
+1. Change name into Competitors name
+2. Used case statement on "sex" column to further categorize the data into male and female
+3. Used case statement to perform grouping on the age column for better analysis as per the business request.
+4. Extracted year and season column out of games column using right and left built-in function.
+5. Used case function in medal column to change the 'NA' data into 'Not registered'.
+6. Used right function to extract only that data where in the season is in 'summer' to align it with the business request.
+
+
+
+**SQL SCRIPT USED IN THE SQL SERVER MANAGEMENT STUDIO FOR EXTRACTION OF RELEVENT DATA**
+
 SELECT  [ID]
       ,[Name] as "Competitors_Name"
       ,case when sex= 'M' then 'Male' else 'Female' end as Sex
