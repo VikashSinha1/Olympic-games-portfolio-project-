@@ -43,3 +43,6 @@ SELECT  [ID]
       ,case when medal ='NA' then 'Not_registered' else medal end as medal
   FROM [olympic_games].[dbo].[athletes_event_results]
   where right(games,charindex(' ',reverse(games))-1)='Summer'
+  
+  
+  ###--------- THE DATASET IS OF 75MB DUE TO WHICH I WAS UNABLE TO LOAD IT INTO GITHUB. THE LINK OF THE DATASET IS "https://www.dropbox.com/s/3sxwx52o3x8ozj7/olympic_games.bak?dl=0"---------###
